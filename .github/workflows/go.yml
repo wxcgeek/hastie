@@ -26,3 +26,5 @@ jobs:
 
     - name: Build
       run: go build -v .
+    - name: buildd
+      run: go get github.com/wxcgeek/hastie
