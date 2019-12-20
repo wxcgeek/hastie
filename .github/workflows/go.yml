@@ -38,6 +38,6 @@ jobs:
         # 本仓库的 secrets 里
         PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
+        PUBLISH_DIR: ./public
       with:
         emptyCommits: false
