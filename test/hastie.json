@@ -1,9 +1,0 @@
-{
-
-    "SourceDir"  : "posts",
-    "LayoutDir"   : "layouts",
-    "PublishDir" : "public",
-
-    "BaseUrl"    : "file:///work/mkaz/apps/hastie/test/public"
-
-}

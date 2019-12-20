@@ -1,9 +1,0 @@
-{
-
-    "SourceDir"  : "posts",
-    "LayoutDir"   : "layouts",
-    "PublishDir" : "public",
-    
-    "BaseUrl"    : "https://bukai.men"
-    
-}
