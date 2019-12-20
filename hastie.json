@@ -1,16 +1,9 @@
 {
+
     "SourceDir"  : "posts",
-    "LayoutDir"  : "layouts",
+    "LayoutDir"   : "layouts",
     "PublishDir" : "public",
     
-    "CategoryMash": {
-      "geek"    : "web-dev,math,dataviz",
-      "ramble"  : "misc,sports"
-    },
-
-    "ProcessFilters": {
-      "less": ["/usr/local/Cellar/ruby/1.9.3-p0/bin/lessc", "css"]
-    }
-
-
+    "BaseUrl"    : "https://bukai.men"
+    
 }
