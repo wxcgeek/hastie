@@ -30,3 +30,14 @@ jobs:
       run: go get github.com/wxcgeek/hastie
     - name: build2
       run: ./hastie
+    - name: Deploy to GitHub Pages
+      uses: docker://peaceiris/gh-pages:v2
+      env:
+        # 注意这里的 PERSONAL_TOKEN，由于默认的 GITHUB_TOKEN 无法触发
+        # 公共仓库的 Pages 构建，因此需要在账户设置中生成 TOKEN，并添加到
+        # 本仓库的 secrets 里
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./dist
+      with:
+        emptyCommits: false
